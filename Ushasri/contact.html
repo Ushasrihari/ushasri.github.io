@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+      width: 100%;
+      gap: 30px;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 300px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background: #f51441;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #c81035;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-section">
+    
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <h2>Contact Me</h2>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>My Address</h3>
+      <p><strong>Location:</strong><br> 123, Your Street,<br> Hyderabad, Telangana - 500001</p>
+      <p><strong>Email:</strong><br> yourname@example.com</p>
+      <p><strong>Phone:</strong><br> +91 98765 43210</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
